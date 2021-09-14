@@ -1,0 +1,28 @@
+#include<iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+    int best,worst,count=0;
+    cin>>best;
+    worst=best;
+    while(--n){
+        int a;
+        cin>>a;
+        if(a<worst){
+            worst=a;
+            count++;
+        }
+        if(a>best){
+            best=a;
+            count++;
+        }
+    }
+    cout<<count<<"\n";
+    return 0;
+  return 0;
+}
+
